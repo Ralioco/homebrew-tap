@@ -6,15 +6,15 @@
 class Ralio < Formula
   desc "CLI for the Ralio payment platform"
   homepage "https://ralio.co"
-  version "0.2.5"
+  version "0.2.6"
   license "MIT"
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://releases.ralio.co/cli/cli-v0.2.5/ralio-macos-arm64"
-    sha256 "192b2f2ce635f6e724f1bcbc3e98d344219c4dc0193e697463fb1cdbe990d56c"
+    url "https://releases.ralio.co/cli/cli-v0.2.6/ralio-macos-arm64"
+    sha256 "3d05233aaf8e9be7c1e113999cb4a482622115e7c77faf7d88edcc207b344992"
   elsif OS.linux? && Hardware::CPU.intel?
-    url "https://releases.ralio.co/cli/cli-v0.2.5/ralio-linux-x64"
-    sha256 "dd808b6908124685cadda67e253b6a8af851e60a1b1931b4e51aa2eeaeb4b914"
+    url "https://releases.ralio.co/cli/cli-v0.2.6/ralio-linux-x64"
+    sha256 "afb04618ea00b50c8d744710187f028f0b95c8a17f21da2c6ec1acc41472b1cc"
   else
     odie "Ralio is only available for macOS (Apple Silicon) and Linux (x86_64)."
   end
