@@ -6,18 +6,18 @@
 class Ralio < Formula
   desc "CLI for the Ralio payment platform"
   homepage "https://ralio.co"
-  version "0.3.1"
+  version "0.3.2"
   license "MIT"
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://releases.ralio.co/cli/cli-v0.3.1/ralio-macos-arm64.tar.gz"
-    sha256 "ce64a6e2b291bfede8983410dc142220647c638e7ae090a34570eceb03fad0ed"
+    url "https://releases.ralio.co/cli/cli-v0.3.2/ralio-macos-arm64.tar.gz"
+    sha256 "c74d309754b591de79255f2ad9a92ee8fe921c323d9bcb380e325a3ee901326d"
   elsif OS.linux? && Hardware::CPU.intel?
-    url "https://releases.ralio.co/cli/cli-v0.3.1/ralio-linux-x64.tar.gz"
-    sha256 "251e61f81786f9916e45b12f3cf8b9353f4c21e7763196f5ca4d3ca6f703910a"
+    url "https://releases.ralio.co/cli/cli-v0.3.2/ralio-linux-x64.tar.gz"
+    sha256 "e548b007e84cb9a8ea8d820386c804845db852320144faf533009cab9c81f78a"
   elsif OS.linux? && Hardware::CPU.arm?
-    url "https://releases.ralio.co/cli/cli-v0.3.1/ralio-linux-arm64.tar.gz"
-    sha256 "65f1021ff6991f19dfedf9086c135f5b9c0d2e7cd3b125312c1743ad19c07fe3"
+    url "https://releases.ralio.co/cli/cli-v0.3.2/ralio-linux-arm64.tar.gz"
+    sha256 "9c48c0a08718e97f4865abc11dc9d69903ace3580d64dec003c25080a796f6b5"
   else
     odie "Ralio is only available for macOS (Apple Silicon) and Linux (x86_64, arm64)."
   end
